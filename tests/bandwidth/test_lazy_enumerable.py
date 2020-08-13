@@ -8,7 +8,7 @@ if six.PY3:
 else:
     from mock import patch
 
-from bandwidth.voice.lazy_enumerable import get_lazy_enumerator
+from bandwidth_old.voice.lazy_enumerable import get_lazy_enumerator
 
 
 class LazyEnumerableTests(unittest.TestCase):

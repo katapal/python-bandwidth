@@ -9,7 +9,7 @@ if six.PY3:
 else:
     from mock import patch
 
-from bandwidth.messaging import Client, BandwidthMessageAPIException
+from bandwidth_old.messaging import Client, BandwidthMessageAPIException
 
 
 class ClientTests(unittest.TestCase):

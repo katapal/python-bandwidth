@@ -14,7 +14,7 @@ class BandwidthVoiceAPIException(Exception):
         :type code: str
         :param code: optional error code
 
-        :rtype: bandwidth.catapult.CatapultException
+        :rtype: bandwidth_old.catapult.CatapultException
         :returns: instance of exception
         """
         self.status_code = status_code

@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 def get_version():
     version = {}
-    with open('./bandwidth/version.py') as f:
+    with open('bandwidth_old/version.py') as f:
         exec(f.read(), version)
     return version.get('__version__')
 
@@ -13,10 +13,10 @@ setup(
     version=get_version(),
     description='This client library is designed to support the Bandwidth '
                 'API and the official Bandwidth SDK',
-    author='bandwidth',
-    author_email='openapi@bandwidth.com',
-    maintainer='bandwidth',
-    maintainer_email='dtolb@bandwidth.com',
+    author='bandwidth_old',
+    author_email='openapi@bandwidth_old.com',
+    maintainer='bandwidth_old',
+    maintainer_email='dtolb@bandwidth_old.com',
     url='https://github.com/bandwidth/python-bandwidth',
     license='MIT',
     packages=find_packages(exclude=['tests*']),

@@ -1,8 +1,8 @@
 import requests
-from bandwidth.voice import Client as VoiceClient
-from bandwidth.account import Client as AccountClient
-from bandwidth.messaging import Client as MessagingClient
-from bandwidth.version import __version__ as version
+from bandwidth_old.voice import Client as VoiceClient
+from bandwidth_old.account import Client as AccountClient
+from bandwidth_old.messaging import Client as MessagingClient
+from bandwidth_old.version import __version__ as version
 
 headers = {
     'User-Agent': 'PythonSDK_' + version

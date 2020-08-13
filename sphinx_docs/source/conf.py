@@ -228,7 +228,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'bandwidth_sdk.tex', 'bandwidth\\_sdk Documentation',
+  (master_doc, 'bandwidth_sdk.tex', 'bandwidth_old\\_sdk Documentation',
    'Bandwidth App Platform', 'manual'),
 ]
 

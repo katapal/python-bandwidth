@@ -2,8 +2,8 @@ from __future__ import absolute_import
 import unittest
 import six
 
-from bandwidth import client
-from bandwidth import _client_classes
+from bandwidth_old import client
+from bandwidth_old import _client_classes
 
 if six.PY3:
     from unittest.mock import patch

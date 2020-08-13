@@ -7,7 +7,7 @@ class Response:
     BXML Response element
 
     :Example:
-        from bandwidth.voice.bxml import Response
+        from bandwidth_old.voice.bxml import Response
         response = Response(E.Call({'from': '+1234567890', 'to': '+1234567891'}), E.Hangup())
     """
 
@@ -19,9 +19,9 @@ class Response:
         :param response_verbs: on or several of BXML verbs
 
         :Example:
-        response = bandwidth.catapult.bxml.Response(E.Hangup())
-        response = bandwidth.catapult.bxml.Response(E.Call({'from': '+1234567890', 'to': '+1234567891'}), E.Hangup())
-        response = bandwidth.catapult.bxml.Response(E.PlayAudio("Thank you"), E.Hangup())
+        response = bandwidth_old.catapult.bxml.Response(E.Hangup())
+        response = bandwidth_old.catapult.bxml.Response(E.Call({'from': '+1234567890', 'to': '+1234567891'}), E.Hangup())
+        response = bandwidth_old.catapult.bxml.Response(E.PlayAudio("Thank you"), E.Hangup())
         """
         self.response = E.xml(E.Response(*response_verbs))
 

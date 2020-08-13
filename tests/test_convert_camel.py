@@ -2,7 +2,7 @@ from __future__ import absolute_import
 import unittest
 import six
 from tests.camel_test_values import before_array_dict, after_array_dict
-from bandwidth.convert_camel import convert_object_to_snake_case
+from bandwidth_old.convert_camel import convert_object_to_snake_case
 
 
 class ConvertCamelTests(unittest.TestCase):

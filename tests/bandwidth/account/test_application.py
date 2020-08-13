@@ -9,7 +9,7 @@ if six.PY3:
 else:
     from mock import patch
 
-from bandwidth.voice import Client
+from bandwidth_old.voice import Client
 
 
 class ApplicationTests(unittest.TestCase):

@@ -10,7 +10,7 @@ else:
     from mock import patch, MagicMock
     builtins = '__builtin__'
 
-from bandwidth.voice import Client
+from bandwidth_old.voice import Client
 
 
 class MediaTests(unittest.TestCase):

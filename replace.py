@@ -18,7 +18,7 @@ def convert_comment_string_to_snake_case(s):
   else:
     return s
 
-with open('bandwidth/catapult/__init__.py') as f:
+with open('bandwidth_old/catapult/__init__.py') as f:
     with open('out2.py', 'w') as e:
       for line in f:
         e.write(convert_comment_string_to_snake_case(line))

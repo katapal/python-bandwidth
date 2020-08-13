@@ -3,10 +3,10 @@ import six
 import urllib
 import json
 import itertools
-from bandwidth.voice.lazy_enumerable import get_lazy_enumerator
-from bandwidth.convert_camel import convert_object_to_snake_case
-from bandwidth.voice.decorators import play_audio
-from bandwidth.version import __version__ as version
+from bandwidth_old.voice.lazy_enumerable import get_lazy_enumerator
+from bandwidth_old.convert_camel import convert_object_to_snake_case
+from bandwidth_old.voice.decorators import play_audio
+from bandwidth_old.version import __version__ as version
 
 quote = urllib.parse.quote if six.PY3 else urllib.quote
 lazy_map = map if six.PY3 else itertools.imap
@@ -40,18 +40,18 @@ class Client:
         :type api_version: str
         :param api_version: catapult api version (optional, default value is v1)
 
-        :rtype: bandwidth.catapult.Client
-        :returns: bandwidth client
+        :rtype: bandwidth_old.catapult.Client
+        :returns: bandwidth_old client
 
         Init the catapult client::
 
-            api = bandwidth.catapult.Client('YOUR_USER_ID', 'YOUR_API_TOKEN', 'YOUR_API_SECRET')
+            api = bandwidth_old.catapult.Client('YOUR_USER_ID', 'YOUR_API_TOKEN', 'YOUR_API_SECRET')
             # or
-            api = bandwidth.client('catapult', 'YOUR_USER_ID', 'YOUR_API_TOKEN', 'YOUR_API_SECRET')
+            api = bandwidth_old.client('catapult', 'YOUR_USER_ID', 'YOUR_API_TOKEN', 'YOUR_API_SECRET')
         """
         if not all((user_id, api_token, api_secret)):
             raise ValueError('Arguments user_id, api_token and api_secret are required. '
-                             'Use bandwidth.client("catapult", "YOUR-USER-ID", "YOUR-API-TOKEN", "YOUR-API-SECRET")')
+                             'Use bandwidth_old.client("catapult", "YOUR-USER-ID", "YOUR-API-TOKEN", "YOUR-API-SECRET")')
         self.user_id = user_id
         self.api_endpoint = other_options.get(
             'api_endpoint', 'https://api.catapult.inetwork.com')
@@ -2632,7 +2632,7 @@ class Client:
         Upload a file
 
         :type media_name: str
-        :param media_name: name of file on bandwidth server
+        :param media_name: name of file on bandwidth_old server
 
         :type content: str|buffer|bytearray|stream|file
         :param content: content of file to upload (file object, string or buffer).
@@ -2668,7 +2668,7 @@ class Client:
         Download a file
 
         :type media_name: str
-        :param media_name: name of file on bandwidth server
+        :param media_name: name of file on bandwidth_old server
 
         :rtype (stream, str)
         :returns stream to file to download and mime type
@@ -2692,7 +2692,7 @@ class Client:
         Remove a file from the server
 
         :type media_name: str
-        :param media_name: name of file on bandwidth server
+        :param media_name: name of file on bandwidth_old server
 
         Example: Delete a file from server::
 
@@ -3296,7 +3296,7 @@ class CatapultException(Exception):
         :type code: str
         :param code: optional error code
 
-        :rtype: bandwidth.catapult.CatapultException
+        :rtype: bandwidth_old.catapult.CatapultException
         :returns: instance of exception
         """
         self.status_code = status_code
