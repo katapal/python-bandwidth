@@ -9,7 +9,7 @@ def get_version():
     return version.get('__version__')
 
 setup(
-    name='bandwidth_sdk',
+    name='bandwidth_old',
     version=get_version(),
     description='This client library is designed to support the Bandwidth '
                 'API and the official Bandwidth SDK',

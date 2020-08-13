@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# bandwidth_sdk documentation build configuration file, created by
+# bandwidth_old documentation build configuration file, created by
 # sphinx-quickstart on Thu Aug 13 14:14:57 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -52,7 +52,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'bandwidth_sdk'
+project = 'bandwidth_old'
 copyright = '2015, Bandwidth App Platform'
 author = 'Bandwidth App Platform'
 
@@ -206,7 +206,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'bandwidth_sdkdoc'
+htmlhelp_basename = 'bandwidth_olddoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -228,7 +228,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'bandwidth_sdk.tex', 'bandwidth_old\\_sdk Documentation',
+  (master_doc, 'bandwidth_old.tex', 'bandwidth_old\\_sdk Documentation',
    'Bandwidth App Platform', 'manual'),
 ]
 
@@ -258,7 +258,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'bandwidth_sdk', 'bandwidth_sdk Documentation',
+    (master_doc, 'bandwidth_old', 'bandwidth_old Documentation',
      [author], 1)
 ]
 
@@ -272,8 +272,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'bandwidth_sdk', 'bandwidth_sdk Documentation',
-   author, 'bandwidth_sdk', 'One line description of project.',
+  (master_doc, 'bandwidth_old', 'bandwidth_old Documentation',
+   author, 'bandwidth_old', 'One line description of project.',
    'Miscellaneous'),
 ]
 
